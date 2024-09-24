@@ -1,11 +1,10 @@
 ---
 style: introduction
 title: Introduction
-description: Read the learning path overview, objectives, associated
-  threats, and prerequisites
+description: Read the learning path overview, objectives, associated threats,
+  and prerequisites
 weight: 1
 ---
-
 ## Overview
 
 Phishing messages are usually tied to malicious infrastructure that either seeks to capture login credentials and use them to access an organization’s or individual's systems, or otherwise seeks to deliver a socially-engineered compromise such as a browser or device exploit. They are one of the most common techniques used by malicious actors who aim to compromise NGOs. Very often, an NGO that receives such a message might find it difficult to tell with certainty whether it was suspicious, much less what the identity and goal of the attacker were. Checking with the presumed sender through another channel might be the easiest way to verify whether a message was legitimate. If the sender cannot be contacted or if the message was not legitimate, it might be important to analyze it in more depth. This could allow us to stop such attacks before they compromise an NGO’s systems, prevent them from doing so in the future, and alert others within the community to such attackers and their tactics, techniques, and procedures (TTPs). The results of such investigations are then often shared, either through formal reports or networks, or informal discussions between NGO security professionals.
@@ -28,59 +27,61 @@ Lastly, it is important to recognize up-front that many of the investigation tec
 
 Passive (appropriate in all cases)
 
-- Uses information that has already been delivered to the targeted person
-- Does not involve communication with the attacker’s infrastructure
-- Generally easier
-- Does not generally alert the attacker that they are under investigation
-- Safer
+* Uses information that has already been delivered to the targeted person
+* Does not involve communication with the attacker’s infrastructure
+* Generally easier
+* Does not generally alert the attacker that they are under investigation
+* Safer
 
 Active
 
-- Generally only used for malware delivery and command-and-control servers
-- Investigator will interact with the attacker’s infrastructure
-- Often requires more skill and deeper investigation
-  - “Cat-and-mouse game” with the attacker
-- May alert the attacker that they are being investigated
-- Risk that the investigator may become compromised or targeted
+* Generally only used for malware delivery and command-and-control servers
+* Investigator will interact with the attacker’s infrastructure
+* Often requires more skill and deeper investigation
+
+  * “Cat-and-mouse game” with the attacker
+* May alert the attacker that they are being investigated
+* Risk that the investigator may become compromised or targeted
 
 ## Objective
 
 Practitioners will learn how to:
 
-- Triage email messages to understand if they are malicious/worth investigating in depth
-- Understand attacker and attack methods
-- Analyze email headers to identify attacker infrastructure
-- Analyze malicious web landing pages
-- Document and report investigation findings
-- Initiate takedown actions to reduce harm
+* Triage email messages to understand if they are malicious/worth investigating in depth
+* Understand attacker and attack methods
+* Analyze email headers to identify attacker infrastructure
+* Analyze malicious web landing pages
+* Document and report investigation findings
+* Initiate takedown actions to reduce harm
 
 ## What threats does this skill mitigate or respond to?
 
 Skills in investigating, tacking, and detecting malicious infrastructure can help respond to the following:
 
-- Targeted phishing attacks
-- Messenger-based phishing
-- Phishing-related infrastructure
+* Targeted phishing attacks
+* Messenger-based phishing
+* Phishing-related infrastructure
 
 ## What are the prerequisites?
 
-- Basic command line knowledge on a major OS of your choice. If you want to learn or brush up on some command line basics, we recommend [this guide](https://www.git-tower.com/blog/command-line-cheat-sheet/) and [this one](https://github.com/jlevy/the-art-of-command-line). If you are looking for a general beginners’ introduction to the command line, we recommend completing Chapter 4 of the [Field Guide to Threat Labs](https://internews.org/wp-content/uploads/2023/11/Field-Guide-to-Threat-Labs.pdf) guide on the topic.
-- A basic understanding of HTML and JavaScript. Whether you need to learn about them from scratch or want to refresh your knowledge, we recommend the [MDN Developer docs](https://developer.mozilla.org/en-US/docs/Learn)
-- A basic understanding of how Git repositories work and how to interact with them. While detailed knowledge of Git and Git-based platforms such as GitHub and GitLab is not a must, it can be useful for all learning paths, since many tools and resources are hosted there and in time you may end up updating local repositories or even creating your own branches. If you have not worked much with such platforms in the past, we recommend starting with any of these resources:
-  - [Pro Git Book](https://book.git-scm.com/book/en/v2) (available in 17 languages) - A study of chapters 1-3 plus selected topics in other chapters will give an excellent introduction
-  - [git - the simple guide](https://rogerdudler.github.io/git-guide/index.html) (Available in 16 languages) is a cheatsheet of Git commands. Useful for when you have a general concept of git but need reference on commands and syntax
-  - [A Visual Git Reference ](https://marklodato.github.io/visual-git-guide/index-en.html) (available in 14 languages) - More advanced visual reference to understand Git workflows and commands
-- [GitHub Skills ](https://skills.github.com/)(English Only)
-- [GitLab Git Essentials](https://levelup.gitlab.com/courses/gitlab-with-git-essentials-s2) (English Only)
+* Basic command line knowledge on a major OS of your choice. If you want to learn or brush up on some command line basics, we recommend [this guide](https://www.git-tower.com/blog/command-line-cheat-sheet/) and [this one](https://github.com/jlevy/the-art-of-command-line). If you are looking for a general beginners’ introduction to the command line, we recommend completing Chapter 4 of the [Field Guide to Threat Labs](https://internews.org/wp-content/uploads/2023/11/Field-Guide-to-Threat-Labs.pdf) guide on the topic.
+* A basic understanding of HTML and JavaScript. Whether you need to learn about them from scratch or want to refresh your knowledge, we recommend the [MDN Developer docs](https://developer.mozilla.org/en-US/docs/Learn)
+* A basic understanding of how Git repositories work and how to interact with them. While detailed knowledge of Git and Git-based platforms such as GitHub and GitLab is not a must, it can be useful for all learning paths, since many tools and resources are hosted there and in time you may end up updating local repositories or even creating your own branches. If you have not worked much with such platforms in the past, we recommend starting with any of these resources:
+
+  * [Pro Git Book](https://book.git-scm.com/book/en/v2) (available in 17 languages) - A study of chapters 1-3 plus selected topics in other chapters will give an excellent introduction
+  * [git - the simple guide](https://rogerdudler.github.io/git-guide/index.html) (Available in 16 languages) is a cheatsheet of Git commands. Useful for when you have a general concept of git but need reference on commands and syntax
+  * [A Visual Git Reference ](https://marklodato.github.io/visual-git-guide/index-en.html) (available in 14 languages) - More advanced visual reference to understand Git workflows and commands
+* [GitHub Skills ](https://skills.github.com/)(English Only)
+* [GitLab Git Essentials](https://levelup.gitlab.com/courses/gitlab-with-git-essentials-s2) (English Only)
 
 ## What devices or software do you need for the exercises?
 
-- You do not need any specialized or powerful hardware for this learning path. Any modern computer should work. While the tools in this learning path have only been tested on x86-based systems, most if not all should also work on ARM systems like the Raspberry Pi or Apple Silicon computers
-- Many of the tools in this learning path run best on Unix-like operating systems. This means that it’s easiest to use Linux, macOS devices, or Windows devices with WSL (Windows Subsystem for Linux) installed on them.
-- If you are running Windows, you will need to install WSL (Windows Subsystem for Linux) to be able to run some of the tools outlined below
-- If you are running macOS, it’s a good idea to install [Homebrew](https://brew.sh/) or [Macports](https://www.macports.org/); those are package managers which can automate the process of installing some of the tools outlined throughout the learning path.
-- WSL and Linux should both have built-in package managers which you can use to install the tools outlined below.
-- It is best to analyze malicious infrastructure on a separate device which you do not use for other sensitive work and where you are not logged into any sensitive or work accounts. If you cannot use a discrete device, you could also run the analysis within a virtual machine. If you’re just starting out with virtual machines, check out [this quick guide](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview) on how to run the user-friendly Ubuntu Linux within one.
+* You do not need any specialized or powerful hardware for this learning path. Any modern computer should work. While the tools in this learning path have only been tested on x86-based systems, most if not all should also work on ARM systems like the Raspberry Pi or Apple Silicon computers
+* Many of the tools in this learning path run best on Unix-like operating systems. This means that it’s easiest to use Linux, macOS devices, or Windows devices with WSL (Windows Subsystem for Linux) installed on them.
+* If you are running Windows, you will need to install WSL (Windows Subsystem for Linux) to be able to run some of the tools outlined below
+* If you are running macOS, it’s a good idea to install [Homebrew](https://brew.sh/) or [Macports](https://www.macports.org/); those are package managers which can automate the process of installing some of the tools outlined throughout the learning path.
+* WSL and Linux should both have built-in package managers which you can use to install the tools outlined below.
+* It is best to analyze malicious infrastructure on a separate device which you do not use for other sensitive work and where you are not logged into any sensitive or work accounts. If you cannot use a discrete device, you could also run the analysis within a virtual machine. If you’re just starting out with virtual machines, check out [this quick guide](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview) on how to run the user-friendly Ubuntu Linux within one.
 
 ## Related learning paths
 
@@ -90,6 +91,6 @@ This learning path offers a fantastic introduction to other ones. After completi
 
 {{% resource title="Helpdesk Workflow: Client Receives a Suspicious/Phishing Email" languages="English" cost="Free" description="Access Now helpline community documentation for responding to suspicious/phishing emails" url="https://accessnowhelpline.gitlab.io/community-documentation/58-Suspicious_Phishing_Email.html#" %}}
 
-{{% resource title="List of all DNS record types" languages="English, Chinese, Japanese, Korean, Russian, Serbian, Ukrainian, Esperanto, Hungarian, Vietnamese, Italian, Spanish, French" cost="Free" description="Includes (almost?) all DNS record types." url="https://en.wikipedia.org/wiki/List_of_DNS_record_types" %}}
+{{% resource title="List of all DNS record types" languages="English, Chinese, Japanese, Korean, Russian, Serbian, Ukrainian, Esperanto, Hungarian, Vietnamese, Italian, Spanish, French" cost="Free" description="Includes (almost?) all DNS record types" url="https://en.wikipedia.org/wiki/List_of_DNS_record_types" %}}
 
 {{% resource title="Amnesty reports on phishing campaigns" languages="Multiple depending on the report" cost="Free" description="A list of examples of how a targeted phishing campaign against human right defenders, activists and journalists looks" url="https://www.amnesty.org/en/search/phishing/" %}}
